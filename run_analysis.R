@@ -69,4 +69,4 @@ both_data_sub <- both_data[,ind]
 
 tidy_data_sub <- melt(both_data_sub[,-length(both_data_sub)], id.vars=c("subject","activity")) # we use a LONG tidy format
 final <- tidy_data_sub %>% group_by(subject,activity,variable) %>% dplyr::summarize(mean = mean(value))
-write.table(final,"final_tidy_set.txt") # Creating .txt file in the working directory
+write.table(final,"final_tidy_set.txt",row.names=F) # Creating .txt file in the working directory
