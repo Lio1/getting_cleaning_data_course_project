@@ -24,20 +24,24 @@ run_analysis.R conducts the following analysis:
 
 To run this script
 
-1. Download and unzip the Human Activity Recognition Using Smartphones Data Folder (available [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)) in your working directory
+1. Download and unzip the HAR Data Folder (available [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)) in your working directory
 2. Download the *run_analysis.R* script from this repository and store it in your working directory
 3. Run the following R command
 
-	```source("run_analysis.R")```
+```R
+source("run_analysis.R")
+```
  
 ### Reading the final tidy set
  
- To read the *final_tidy_set.txt* included in this repository, which is the output of the *run_analysis.R* script
+To read the *final_tidy_set.txt* included in this repository, which is the output of the *run_analysis.R* script
  
- 1. Download the *final_tidy_set.txt* script from this repository and store it in your working directory
- 2. Run the following R command
+1. Download the *final_tidy_set.txt* script from this repository and store it in your working directory
+2. Run the following R command
 
-	```data <- read.table("final_tidy_set.txt", header = TRUE) ```
+```R
+data <- read.table("final_tidy_set.txt", header = TRUE)
+```
   
 ### Codebook of the final tidy set
 
